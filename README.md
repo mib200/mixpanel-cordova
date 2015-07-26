@@ -1,7 +1,7 @@
 
 ## Cordova Plugin that wraps Mixpanel SDK for Android and iOS
 
-- [android sdk version 4.6.1]
+- [android sdk version 4.6.2]
 - [ios sdk version 2.8.2]
 
 #### Install
@@ -11,6 +11,12 @@ cordova plugin add https://github.com/mib200/mixpanel-cordova.git
 ```
 
 For Android, AndroidManifest.xml is automatically updated to work with MixPanel push.
+
+--> Add below line to build.gradle dependencies. Looking into how to add it directly :)
+
+```
+compile "com.mixpanel.android:mixpanel-android:4.6.2"
+```
 
 For IOS, please add following code in AppDelegate.m
 

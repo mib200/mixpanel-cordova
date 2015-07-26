@@ -34,7 +34,7 @@
 
         <!-- Plugin files -->
         <source-file src="src/android/MixpanelPlugin.java" target-dir="src/android"/>
-        <source-file src="src/libs/mixpanel-android-4.6.1.jar" target-dir="libs/"/>
+        <!-- <source-file src="src/libs/mixpanel-android-4.6.1.jar" target-dir="libs/"/> -->
 
         <!-- AndroidManifest.xml -->
         <!-- see https://github.com/mixpanel/mixpanel-android/blob/master/src/main/AndroidManifest.xml -->
@@ -49,6 +49,7 @@
 
         <config-file target="AndroidManifest.xml" parent="/manifest/application">
             <activity android:exported="true" android:name="com.plugin.gcm.PushHandlerActivity" />
+            <activity android:name="com.mixpanel.android.surveys.SurveyActivity" android:theme="@style/com_mixpanel_android_SurveyActivityTheme" />
             <receiver android:name="com.mixpanel.android.mpmetrics.GCMReceiver" android:permission="com.google.android.c2dm.permission.SEND">
                 <intent-filter>
                     <action android:name="com.google.android.c2dm.intent.RECEIVE" />
