@@ -5,13 +5,10 @@
         version="1.0.0">
 
     <name>Mixpanel</name>
-
-    <description>
-        Mixpanel Cordova Plugin for iOS and Android
-    </description>
-
+    <description>Mixpanel Cordova Plugin for iOS and Android</description>
     <repo>https://github.com/mib200/mixpanel-cordova.git</repo>
     <author>Manish Kumar</author>
+    <license>MIT License</license>
     <keywords>mixpanel, cordova, phonegap, ionic, plugin, ios, android</keywords>
 
     <engines>
